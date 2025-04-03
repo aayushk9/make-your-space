@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MYS: Make your space
 
-## Getting Started
+Make your space is a modern full stack web application designed to help couples stay organized and connected. It provides a **shared space** where partners can manage their relationship through a **shared calendar, task manager, countdown timer and surprise scheduling features**. 
 
-First, run the development server:
+Our goal is to make relationship management fun and intuitive by offering a private, dedicated space for couples to stay in sync.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Why MYS?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+✅ **Shared Space for Couples** – Permanent couple code for easy access, expiring only when one partner deletes it.  
+📅 **Shared Calendar** – Manage important dates, anniversaries and plans together.  
+📌 **Task Manager** – Split bills and responsibilities.  
+⏳ **Countdown Timer** – Track the next meetup or vacation and get a countdown for it.  
+🎁 **Surprise Mode** – Schedule surprise video calls or messages.  
+🔒 **Privacy First** – Your data stays secure and private between you and your partner.   
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
+MYS is built with modern technologies to ensure a smooth and reliable experience:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Frontend:**  
+- Next.js  
+- React  
+- TypeScript  
+- TailwindCSS  
+- Shadcn UI  
 
-## Learn More
+### **Backend:**  
+- Node.js  
+- Prisma ORM  
 
-To learn more about Next.js, take a look at the following resources:
+### **Database:**  
+- PostgreSQL   
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Get Started
+MYS is currently in development and we aim to provide a great not good experience for couples worldwide.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
