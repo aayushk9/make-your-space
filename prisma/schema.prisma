@@ -6,3 +6,61 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id          String  @id  @default(uuid())
+  username    String
+  createdAt   DateTime
+  couple      Couple  @relation(fields: [coupleId], references: [id])
+  coupleId    String
+}
+
+model Couple {
+  id           String    @id  @default(uuid())
+  code         String
+  user         User[]  // 2 users max (handle this logic on api route)
+  userId       String
+  calendar     Calendar?
+  billtracker  billTracker?
+  countdown    countdownTimer[]
+}
+
+model Calendar {
+  id        String  @id  @default(uuid())
+  events    Events[]
+  couple    Couple  @relation(fields: [coupleId], references: [id])
+  coupleId  String  @unique
+}
+
+model Events {
+  id           String  @id  @default(uuid())
+  calendar     Calendar   @relation(fields: [calendarId], references: [id])
+  calendarId   String
+  title        String
+  date         DateTime
+}
+
+model billTracker {
+  id       String   @id  @default(uuid())
+  couple   Couple  @relation(fields: [coupleId], references: [id])
+  coupleId String  @unique
+  bills    bills[]
+}
+
+model bills {
+  id           String @id   @default(uuid())
+  title        String
+  description  String?
+  amount       Int
+  paidBy       String
+  billtracker  billTracker  @relation(fields: [billId], references: [id])
+  billId       String
+}
+
+model countdownTimer {
+  id         String   @id  @default(uuid())
+  title      String  
+  datetime   DateTime
+  couple     Couple   @relation(fields:[coupleId], references:[id])
+  coupleId   String
+}  
