@@ -23,6 +23,7 @@ model Couple {
   calendar     Calendar?
   billtracker  billTracker?
   countdown    countdownTimer[]
+  suprise      Suprise[]
 }
 
 model Calendar {
@@ -64,3 +65,11 @@ model countdownTimer {
   couple     Couple   @relation(fields:[coupleId], references:[id])
   coupleId   String
 }  
+
+model Suprise {
+  id       String @id  @default(uuid())
+  title    String
+  date     DateTime
+  couple   Couple  @relation(fields:[coupleId], references: [id])
+  coupleId String
+}
