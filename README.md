@@ -1,4 +1,4 @@
-# MYS: Space for Couples & Friends
+# MAK3SPACE 
 
 Our goal is to create a space where couples and close friend groups can stay connected with fun coordination tools, real accountability, and optional Solana-powered rewards.
 
