@@ -1,0 +1,5 @@
+TODOs
+
+Frontend
+
+  - Start with a basic landing page with a join list button
