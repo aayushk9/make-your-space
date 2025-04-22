@@ -1,35 +1,60 @@
-# MYS: Make your space
+# MYS: Space for Couples & Friends
 
-Make your space is a modern full stack web application designed to help couples stay organized and connected. It provides a **shared space** where partners can manage their relationship through a **shared calendar, task manager, countdown timer and surprise scheduling features**. 
+Our goal is to create a space where couples and close friend groups can stay connected with fun coordination tools, real accountability, and optional Solana-powered rewards.
 
-Our goal is to make relationship management fun and intuitive by offering a private, dedicated space for couples to stay in sync.
+---
 
-## Why MYS?
+## Getting Started
 
-✅ **Shared Space for Couples** – Permanent couple code for easy access, expiring only when one partner deletes it.  
-📅 **Shared Calendar** – Manage important dates, anniversaries and plans together.  
-📌 **Task Manager** – Split bills and responsibilities.  
-⏳ **Countdown Timer** – Track the next meetup or vacation and get a countdown for it.  
-🎁 **Surprise Mode** – Schedule surprises.
-🔒 **Privacy First** – Your data stays secure and private between you and your partner.   
+### Prerequisites
 
-## Tech Stack
-MYS is built with modern technologies to ensure a smooth and reliable experience:
+- **Node.js** (v18 or later)
+- **npm**
+- **PostgreSQL** database
 
-### **Frontend:**  
-- Next.js  
-- React  
-- TypeScript  
-- TailwindCSS  
-  
-### **Backend:**  
-- Node.js  
-- Prisma ORM  
+### Installation
 
-### **Database:**  
-- PostgreSQL   
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/make-your-space.git
+   cd make-your-space
+   
+   ```
 
-## Get Started
-MYS is currently in development and we aim to provide a great not good experience for couples worldwide.
+2. Install dependencies:
+   ```
+   npm install
 
+   ```
 
+3. Set up environment variables:
+   Create a `.env` file in the root directory and add the following:
+   ```
+   NEXT_PUBLIC_API = "http://localhost:3000/api" (after deployment replace it with your deployed link)
+   DATABASE_URL= "your postgresql connection string"
+   ```
+
+4. Set up the database:
+   ```
+   npm i prisma
+   npx prisma init
+   npx prisma migrate dev
+   ```
+
+5. Run the development server:
+   ```
+   npm run dev
+   ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+### Useful resources
+
+- [Next.js](https://nextjs.org/)
+- [Prisma](https://www.prisma.io/)
+- [NextAuth.js](https://next-auth.js.org/)
+- [shadcn/ui](https://ui.shadcn.com/)
