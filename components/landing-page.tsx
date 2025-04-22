@@ -171,7 +171,7 @@ export function LandingPage() {
                                             </motion.span>
                                         ))}
                                 </div>
-                                <span>people have already joined</span>
+                                <span>people have already joined the waitlist</span>
                             </div>
                         )}
 
