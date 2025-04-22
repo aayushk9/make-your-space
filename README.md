@@ -10,7 +10,7 @@ Our goal is to make relationship management fun and intuitive by offering a priv
 📅 **Shared Calendar** – Manage important dates, anniversaries and plans together.  
 📌 **Task Manager** – Split bills and responsibilities.  
 ⏳ **Countdown Timer** – Track the next meetup or vacation and get a countdown for it.  
-🎁 **Surprise Mode** – Schedule surprise video calls or messages.  
+🎁 **Surprise Mode** – Schedule surprises.
 🔒 **Privacy First** – Your data stays secure and private between you and your partner.   
 
 ## Tech Stack
@@ -21,8 +21,7 @@ MYS is built with modern technologies to ensure a smooth and reliable experience
 - React  
 - TypeScript  
 - TailwindCSS  
-- Shadcn UI  
-
+  
 ### **Backend:**  
 - Node.js  
 - Prisma ORM  
